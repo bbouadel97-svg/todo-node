@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo CESI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <h1>ToDo CESI</h1>
+      <nav class="top-nav">
+        <a href="#">Accueil</a>
+        <a href="#">Mes tâches</a>
+        <a href="#">À propos</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Ma liste de tâches</h2>
+      <p>Interface cliente d'une API Node.js / MySQL</p>
+      <section class="connection-status">
+        <img src="icone.png" alt="" />
+        <p id="connection" role="status">Connexion temps réel…</p>
+      </section>
+      <form id="task-form">
+        <label for="title">Nouvelle tâche</label>
+        <div class="form-row">
+          <input
+            id="title"
+            name="title"
+            required
+            minlength="2"
+            maxlength="120"
+            placeholder="Ex. Terminer le TP"
+          /><button type="submit">Ajouter</button>
+        </div>
+      </form>
+      <section class="task-cards">
+        <div class="card">
+          <p>Tache terminée</p>
+        </div>
+        <div class="card">
+          <p>Tache en cours</p>
+        </div>
+        <div class="card">
+          <p>Tache à faire</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
